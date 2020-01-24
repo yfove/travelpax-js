@@ -32,7 +32,7 @@ app.init = function() {
         $(this)[0].reset();
     });
     // sortable with jQuery UI 
-    $('ui').sortable(
+    $('ul').sortable(
         {
             connectWith: ".connect"
         }

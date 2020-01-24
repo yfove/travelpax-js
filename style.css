@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: sans-serif;
+    background:url('bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+ul.essentials,
+ul.got {
+    list-style: none;
+    margin: 0;
+    width: 40%;
+    margin: 5%;
+    float: left;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+ul.essentials li,
+ul.got li {
+    background: rgba(255, 255, 255, 1);
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    cursor: move;
+}
+
+li.heading {
+    font-weight: 600;
+    background: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+input[name="itemName"] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input.submit {
+    padding: 15px 20px;
+    background-color: rgb(66, 64, 66);
+    color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+}
+
+label {
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.71);
+}
