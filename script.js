@@ -22,7 +22,7 @@ app.init = function() {
         e.preventDefault(); 
         console.log('hello');
         const item = $('input[type=text]').val();
-        if ($('input[typed=checkbox]:checked').length>0){
+        if ($('input[type=checkbox]:checked').length>0){
             app.addHeading(item);
         }else{
             app.addItem(item);
