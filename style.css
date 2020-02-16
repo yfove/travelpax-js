@@ -1,83 +1,166 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    font-family: sans-serif;
-    background:url('bg.jpg') center no-repeat;
-    background-size: cover;
+  font-family: "Lato", sans-serif;
+  /* font-family: sans-serif; */
+  background: url("./img/bg2.jpg") center no-repeat;
+  background-size: cover;
 }
 
 html,
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 ul.essentials,
 ul.got {
-    list-style: none;
-    margin: 0;
-    width: 40%;
-    margin: 5%;
-    float: left;
-    padding: 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 2px black;
+  list-style: none;
+  margin: 0;
+  width: 40%;
+  margin: 5%;
+  float: left;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* box-shadow: 0 0 2px black; */
 }
 
 ul.essentials li,
 ul.got li {
-    background: rgba(255, 255, 255, 1);
-    border-top: 1px solid #ccc;
-    padding: 10px;
-    cursor: move;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: move;
 }
 
 li.heading {
-    font-weight: 600;
-    background: black;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  background: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 form {
-    text-align: center;
+  text-align: center;
 }
 
 input[name="itemName"] {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
+  padding: 15px 20px;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
 }
 
-input.submit {
-    padding: 15px 20px;
-    background-color: rgb(66, 64, 66);
-    color: white;
-    border-radius: 10px;
-    margin: 0 10px;
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 25px;
+  /* border: 2px solid #555; */
+  margin-left: 10px;
 }
 
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    color: black;
-    font-size: 80px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.71);
+input[type="checkbox"]:checked {
+  background: rgb(32, 32, 32);
 }
 
 label {
-    color: black;
+  font-weight: 900;
+  text-transform: none;
+  font-size: larger;
+  text-shadow: none;
+}
+
+input.submit {
+  padding: 15px 20px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 0 20px;
+  font-weight: 900;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  /* font-family: "Oswald", sans-serif; */
+  /* color: black; */
+  color: black;
+  font-size: 7.5em;
+  /* text-transform: uppercase; */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+label {
+  /* color: black; */
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.71);
+}
+
+@media (max-width: 610px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  form {
+    padding: 20px;
+    /* margin: 10px; */
+  }
+
+  input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 25px;
+    /* border: 2px solid #555; */
+    margin-left: 10px;
+  }
+
+  input[type="checkbox"]:checked {
+    background: rgb(32, 32, 32);
+  }
+
+  input.submit {
+    margin-top: 15px;
+  }
+
+  label {
+    font-weight: 900;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.71);
+    font-size: larger;
+    text-shadow: none;
+  }
+
+  ul.essentials,
+  ul.got {
+    list-style: none;
+    width: 90%;
+    /* padding: 10px 0px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* box-shadow: 0 0 2px black; */
+  }
 }
